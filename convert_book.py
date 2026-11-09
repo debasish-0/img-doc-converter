@@ -85,9 +85,17 @@ def extract_lines(result):
         if not text:
             continue
         box = np.asarray(boxes[index]) if index < len(boxes) else np.array([[0, index * 20]])
+        if box.ndim == 1:
+            if box.size >= 4:
+                x_position, y_position = float(box[0]), float(box[1])
+            else:
+                x_position, y_position = 0.0, float(index * 20)
+        else:
+            x_position = float(np.min(box[:, 0]))
+            y_position = float(np.min(box[:, 1]))
         lines.append((
-            float(np.min(box[:, 1])),
-            float(np.min(box[:, 0])),
+            y_position,
+            x_position,
             text,
             float(scores[index]) if index < len(scores) else 1.0,
         ))
