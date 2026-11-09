@@ -3,6 +3,7 @@ from pathlib import Path
 from tempfile import TemporaryDirectory
 
 from pipeline_utils import discover_images, discover_page_docx, natural_key, validate_page_numbers
+from ocr_backends import OCRLine, _box_position, _plain_text
 
 
 class PipelineTests(unittest.TestCase):
@@ -35,6 +36,18 @@ class PipelineTests(unittest.TestCase):
                 [number for number, _ in discover_page_docx(folder)],
                 [1, 2],
             )
+
+    def test_box_position_accepts_flat_and_polygon_boxes(self):
+        self.assertEqual(_box_position([10, 20, 30, 40]), (10.0, 20.0))
+        self.assertEqual(_box_position([[10, 20], [30, 40]]), (10.0, 20.0))
+
+    def test_surya_html_is_normalized_to_editable_text(self):
+        self.assertEqual(_plain_text("<p>Chapter 1</p><br>Text"), "Chapter 1\nText")
+
+    def test_normalized_line_keeps_list_marker_and_confidence(self):
+        line = OCRLine(20, 10, "1. First item", 0.94, "ListGroup")
+        self.assertEqual(line.text, "1. First item")
+        self.assertEqual(line.confidence, 0.94)
 
 
 if __name__ == "__main__":

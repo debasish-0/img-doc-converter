@@ -1,8 +1,9 @@
-# CPU inference engine
-paddlepaddle==3.2.1
+# OCR, layout analysis, and table-aware document parsing
+surya-ocr>=0.23,<0.24
 
-# OCR, layout analysis, and document parsing
-paddleocr>=3.0,<4.0
+# Optional comparison backend:
+# paddlepaddle==3.2.1
+# paddleocr>=3.0,<4.0
 
 # Image processing
 numpy>=1.26,<3

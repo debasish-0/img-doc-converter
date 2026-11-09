@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import os
 import re
 import shutil
 from pathlib import Path
@@ -13,12 +14,14 @@ from docx.enum.style import WD_STYLE_TYPE
 from docx.shared import Inches, Pt
 
 from pipeline_utils import discover_images
+from ocr_backends import build_backend
 
 PROJECT_DIR = Path(__file__).resolve().parent
 INPUT_FOLDER = PROJECT_DIR / "book_pages"
 OUTPUT_FOLDER = PROJECT_DIR / "page_docx_files"
 MANIFEST_FILE = OUTPUT_FOLDER / "conversion_manifest.json"
 OCR_LANGUAGE = "en"
+OCR_BACKEND = os.getenv("OCR_BACKEND", "surya")
 
 
 def build_ocr():
@@ -133,10 +136,9 @@ def write_editable_page(document: Document, lines) -> float:
     return average_confidence
 
 
-def convert_page(image_path: Path, page_number: int, ocr) -> dict:
+def convert_page(image_path: Path, page_number: int, backend) -> dict:
     print(f"Processing page {page_number}: {image_path.name}", flush=True)
-    result = next(iter(ocr.predict(load_image(image_path))), None)
-    lines = extract_lines(result) if result is not None else []
+    lines = backend.recognize(image_path)
     document = Document()
     configure_styles(document)
     section = document.sections[0]
@@ -144,7 +146,10 @@ def convert_page(image_path: Path, page_number: int, ocr) -> dict:
     section.bottom_margin = Inches(0.7)
     section.left_margin = Inches(0.8)
     section.right_margin = Inches(0.8)
-    confidence = write_editable_page(document, lines)
+    confidence = write_editable_page(
+        document,
+        [(line.y, line.x, line.text, line.confidence) for line in lines],
+    )
     output_path = OUTPUT_FOLDER / f"page_{page_number:04d}.docx"
     temporary_path = output_path.with_suffix(".tmp.docx")
     document.save(temporary_path)
@@ -164,11 +169,11 @@ def main() -> None:
     if OUTPUT_FOLDER.exists():
         shutil.rmtree(OUTPUT_FOLDER)
     OUTPUT_FOLDER.mkdir(parents=True)
-    ocr = build_ocr()
+    backend = build_backend(OCR_BACKEND, OCR_LANGUAGE)
     manifest = {"input_count": len(image_files), "pages": [], "failures": []}
     for page_number, image_path in enumerate(image_files, start=1):
         try:
-            manifest["pages"].append(convert_page(image_path, page_number, ocr))
+            manifest["pages"].append(convert_page(image_path, page_number, backend))
         except Exception as error:
             manifest["failures"].append({
                 "page": page_number,
