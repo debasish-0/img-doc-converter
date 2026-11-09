@@ -59,11 +59,25 @@ def result_as_dict(result):
     raise TypeError(f"Unsupported PaddleOCR result type: {type(result)!r}")
 
 
+def first_result_value(data, keys, default):
+    """Return the first non-empty result field without boolean-testing arrays."""
+    for key in keys:
+        value = data.get(key)
+        if value is None:
+            continue
+        if hasattr(value, "size") and value.size == 0:
+            continue
+        if not hasattr(value, "size") and len(value) == 0:
+            continue
+        return value
+    return default
+
+
 def extract_lines(result):
     data = result_as_dict(result)
-    texts = data.get("rec_texts") or data.get("texts") or []
-    scores = data.get("rec_scores") or data.get("scores") or [1.0] * len(texts)
-    boxes = data.get("rec_boxes") or data.get("dt_polys") or data.get("boxes") or []
+    texts = first_result_value(data, ("rec_texts", "texts"), [])
+    scores = first_result_value(data, ("rec_scores", "scores"), [1.0] * len(texts))
+    boxes = first_result_value(data, ("rec_boxes", "dt_polys", "boxes"), [])
     lines = []
     for index, text in enumerate(texts):
         text = str(text).strip()
