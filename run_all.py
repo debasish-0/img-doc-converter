@@ -6,7 +6,7 @@ PROJECT_DIR = Path(__file__).resolve().parent
 
 
 def main():
-    scripts = ["convert_pages.py", "merge_pages.py"]
+    scripts = ["convert_book.py", "merge_book.py"]
 
     for name in scripts:
         if not (PROJECT_DIR / name).is_file():

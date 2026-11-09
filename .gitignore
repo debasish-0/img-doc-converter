@@ -45,6 +45,11 @@ Thumbs.db
 secrets/
 config/secrets/
 
+# === Generated conversion output ===
+page_docx_files/
+final_book.docx
+*.tmp.docx
+
 
 How to Use
 
