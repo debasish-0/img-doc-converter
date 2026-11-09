@@ -1,0 +1,14 @@
+# CPU inference engine
+paddlepaddle==3.2.1
+
+# OCR, layout analysis, and document parsing
+paddleocr[doc-parser]>=3.0,<4.0
+
+# Image processing
+numpy
+Pillow
+opencv-contrib-python
+
+# Word document creation and merging
+python-docx
+docxcompose

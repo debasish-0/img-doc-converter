@@ -1,0 +1,66 @@
+Here’s a complete .gitignore template that works for Cursor (using .cursorignore syntax, which is identical to .gitignore) and also excludes Python virtual environments (venv, .env, etc.), along with common build artifacts.
+You can use this for both .gitignore and .cursorignore.
+
+.gitignore / .cursorignore Template
+Gitignore# === Python Virtual Environments ===
+venv/
+.env/
+env/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# === Python Cache & Build Artifacts ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.py.class
+*.egg
+*.egg-info/
+dist/
+build/
+pip-wheel-metadata/
+*.whl
+
+# === IDE & Editor Files ===
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# === OS Generated Files ===
+.DS_Store
+Thumbs.db
+
+# === Cursor-specific exclusions ===
+# Prevent AI from reading sensitive files
+*.key
+*.pem
+*.crt
+*.csr
+*.env
+secrets/
+config/secrets/
+
+
+How to Use
+
+For Git: Save this as .gitignore in your project root.
+For Cursor AI: Save the same content as .cursorignore in your project root.
+Cursor will then ignore these files when providing AI assistance.
+
+
+💡 Tip:
+If you want to exclude all virtual environments regardless of name, you can add:
+Gitignore*/venv/
+*/.venv/
+*/env/
+*/.env/
+
+This catches nested venv folders inside subdirectories.
+
+If you want, I can make you a unified template that also ignores node_modules, Docker files, and other common dev artifacts so it’s ready for multi-language projects.
+Do you want me to prepare that?
