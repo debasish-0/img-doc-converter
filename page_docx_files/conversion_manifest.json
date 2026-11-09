@@ -1,0 +1,486 @@
+{
+  "input_count": 60,
+  "pages": [
+    {
+      "page": 1,
+      "source": "book_pages\\6302841220027323816.jpg",
+      "output": "page_0001.docx",
+      "line_count": 21,
+      "average_confidence": 0.9936,
+      "status": "ok"
+    },
+    {
+      "page": 2,
+      "source": "book_pages\\6302841220027323817.jpg",
+      "output": "page_0002.docx",
+      "line_count": 0,
+      "average_confidence": 0.0,
+      "status": "ok"
+    },
+    {
+      "page": 3,
+      "source": "book_pages\\6302841220027323818.jpg",
+      "output": "page_0003.docx",
+      "line_count": 22,
+      "average_confidence": 0.9947,
+      "status": "ok"
+    },
+    {
+      "page": 4,
+      "source": "book_pages\\6302841220027323819.jpg",
+      "output": "page_0004.docx",
+      "line_count": 17,
+      "average_confidence": 0.9975,
+      "status": "ok"
+    },
+    {
+      "page": 5,
+      "source": "book_pages\\6302841220027323820.jpg",
+      "output": "page_0005.docx",
+      "line_count": 67,
+      "average_confidence": 0.9989,
+      "status": "ok"
+    },
+    {
+      "page": 6,
+      "source": "book_pages\\6302841220027323821.jpg",
+      "output": "page_0006.docx",
+      "line_count": 38,
+      "average_confidence": 0.9981,
+      "status": "ok"
+    },
+    {
+      "page": 7,
+      "source": "book_pages\\6302841220027323822.jpg",
+      "output": "page_0007.docx",
+      "line_count": 41,
+      "average_confidence": 0.9954,
+      "status": "ok"
+    },
+    {
+      "page": 8,
+      "source": "book_pages\\6302841220027323823.jpg",
+      "output": "page_0008.docx",
+      "line_count": 23,
+      "average_confidence": 0.9961,
+      "status": "ok"
+    },
+    {
+      "page": 9,
+      "source": "book_pages\\6302841220027323824.jpg",
+      "output": "page_0009.docx",
+      "line_count": 63,
+      "average_confidence": 0.9967,
+      "status": "ok"
+    },
+    {
+      "page": 10,
+      "source": "book_pages\\6302841220027323825.jpg",
+      "output": "page_0010.docx",
+      "line_count": 50,
+      "average_confidence": 0.9957,
+      "status": "ok"
+    },
+    {
+      "page": 11,
+      "source": "book_pages\\6302841220027323826.jpg",
+      "output": "page_0011.docx",
+      "line_count": 65,
+      "average_confidence": 0.9988,
+      "status": "ok"
+    },
+    {
+      "page": 12,
+      "source": "book_pages\\6302841220027323827.jpg",
+      "output": "page_0012.docx",
+      "line_count": 72,
+      "average_confidence": 0.9872,
+      "status": "ok"
+    },
+    {
+      "page": 13,
+      "source": "book_pages\\6302841220027323828.jpg",
+      "output": "page_0013.docx",
+      "line_count": 68,
+      "average_confidence": 0.993,
+      "status": "ok"
+    },
+    {
+      "page": 14,
+      "source": "book_pages\\6302841220027323829.jpg",
+      "output": "page_0014.docx",
+      "line_count": 61,
+      "average_confidence": 0.9975,
+      "status": "ok"
+    },
+    {
+      "page": 15,
+      "source": "book_pages\\6302841220027323830.jpg",
+      "output": "page_0015.docx",
+      "line_count": 41,
+      "average_confidence": 0.9967,
+      "status": "ok"
+    },
+    {
+      "page": 16,
+      "source": "book_pages\\6302841220027323831.jpg",
+      "output": "page_0016.docx",
+      "line_count": 35,
+      "average_confidence": 0.9886,
+      "status": "ok"
+    },
+    {
+      "page": 17,
+      "source": "book_pages\\6302841220027323832.jpg",
+      "output": "page_0017.docx",
+      "line_count": 41,
+      "average_confidence": 0.9966,
+      "status": "ok"
+    },
+    {
+      "page": 18,
+      "source": "book_pages\\6302841220027323833.jpg",
+      "output": "page_0018.docx",
+      "line_count": 39,
+      "average_confidence": 0.9962,
+      "status": "ok"
+    },
+    {
+      "page": 19,
+      "source": "book_pages\\6302841220027323834.jpg",
+      "output": "page_0019.docx",
+      "line_count": 45,
+      "average_confidence": 0.9475,
+      "status": "ok"
+    },
+    {
+      "page": 20,
+      "source": "book_pages\\6302841220027323835.jpg",
+      "output": "page_0020.docx",
+      "line_count": 49,
+      "average_confidence": 0.892,
+      "status": "ok"
+    },
+    {
+      "page": 21,
+      "source": "book_pages\\6302841220027323836.jpg",
+      "output": "page_0021.docx",
+      "line_count": 49,
+      "average_confidence": 0.9908,
+      "status": "ok"
+    },
+    {
+      "page": 22,
+      "source": "book_pages\\6302841220027323837.jpg",
+      "output": "page_0022.docx",
+      "line_count": 52,
+      "average_confidence": 0.8223,
+      "status": "ok"
+    },
+    {
+      "page": 23,
+      "source": "book_pages\\6302841220027323838.jpg",
+      "output": "page_0023.docx",
+      "line_count": 44,
+      "average_confidence": 0.9514,
+      "status": "ok"
+    },
+    {
+      "page": 24,
+      "source": "book_pages\\6302841220027323839.jpg",
+      "output": "page_0024.docx",
+      "line_count": 46,
+      "average_confidence": 0.9396,
+      "status": "ok"
+    },
+    {
+      "page": 25,
+      "source": "book_pages\\6302841220027323840.jpg",
+      "output": "page_0025.docx",
+      "line_count": 39,
+      "average_confidence": 0.9944,
+      "status": "ok"
+    },
+    {
+      "page": 26,
+      "source": "book_pages\\6302841220027323841.jpg",
+      "output": "page_0026.docx",
+      "line_count": 38,
+      "average_confidence": 0.9965,
+      "status": "ok"
+    },
+    {
+      "page": 27,
+      "source": "book_pages\\6302841220027323842.jpg",
+      "output": "page_0027.docx",
+      "line_count": 34,
+      "average_confidence": 0.9937,
+      "status": "ok"
+    },
+    {
+      "page": 28,
+      "source": "book_pages\\6302841220027323843.jpg",
+      "output": "page_0028.docx",
+      "line_count": 35,
+      "average_confidence": 0.9904,
+      "status": "ok"
+    },
+    {
+      "page": 29,
+      "source": "book_pages\\6302841220027323844.jpg",
+      "output": "page_0029.docx",
+      "line_count": 49,
+      "average_confidence": 0.9177,
+      "status": "ok"
+    },
+    {
+      "page": 30,
+      "source": "book_pages\\6302841220027323845.jpg",
+      "output": "page_0030.docx",
+      "line_count": 68,
+      "average_confidence": 0.9897,
+      "status": "ok"
+    },
+    {
+      "page": 31,
+      "source": "book_pages\\6302841220027323846.jpg",
+      "output": "page_0031.docx",
+      "line_count": 11,
+      "average_confidence": 0.9972,
+      "status": "ok"
+    },
+    {
+      "page": 32,
+      "source": "book_pages\\6302841220027323847.jpg",
+      "output": "page_0032.docx",
+      "line_count": 51,
+      "average_confidence": 0.998,
+      "status": "ok"
+    },
+    {
+      "page": 33,
+      "source": "book_pages\\6302841220027323848.jpg",
+      "output": "page_0033.docx",
+      "line_count": 63,
+      "average_confidence": 0.998,
+      "status": "ok"
+    },
+    {
+      "page": 34,
+      "source": "book_pages\\6302841220027323849.jpg",
+      "output": "page_0034.docx",
+      "line_count": 46,
+      "average_confidence": 0.997,
+      "status": "ok"
+    },
+    {
+      "page": 35,
+      "source": "book_pages\\6302841220027323850.jpg",
+      "output": "page_0035.docx",
+      "line_count": 44,
+      "average_confidence": 0.9961,
+      "status": "ok"
+    },
+    {
+      "page": 36,
+      "source": "book_pages\\6302841220027323851.jpg",
+      "output": "page_0036.docx",
+      "line_count": 41,
+      "average_confidence": 0.996,
+      "status": "ok"
+    },
+    {
+      "page": 37,
+      "source": "book_pages\\6302841220027323852.jpg",
+      "output": "page_0037.docx",
+      "line_count": 231,
+      "average_confidence": 0.9965,
+      "status": "ok"
+    },
+    {
+      "page": 38,
+      "source": "book_pages\\6302841220027323853.jpg",
+      "output": "page_0038.docx",
+      "line_count": 22,
+      "average_confidence": 0.9921,
+      "status": "ok"
+    },
+    {
+      "page": 39,
+      "source": "book_pages\\6302841220027323854.jpg",
+      "output": "page_0039.docx",
+      "line_count": 394,
+      "average_confidence": 0.9598,
+      "status": "ok"
+    },
+    {
+      "page": 40,
+      "source": "book_pages\\6302841220027323855.jpg",
+      "output": "page_0040.docx",
+      "line_count": 119,
+      "average_confidence": 0.9899,
+      "status": "ok"
+    },
+    {
+      "page": 41,
+      "source": "book_pages\\6302841220027323856.jpg",
+      "output": "page_0041.docx",
+      "line_count": 98,
+      "average_confidence": 0.9965,
+      "status": "ok"
+    },
+    {
+      "page": 42,
+      "source": "book_pages\\6302841220027323857.jpg",
+      "output": "page_0042.docx",
+      "line_count": 190,
+      "average_confidence": 0.9989,
+      "status": "ok"
+    },
+    {
+      "page": 43,
+      "source": "book_pages\\6302841220027323858.jpg",
+      "output": "page_0043.docx",
+      "line_count": 340,
+      "average_confidence": 0.9987,
+      "status": "ok"
+    },
+    {
+      "page": 44,
+      "source": "book_pages\\6302841220027323859.jpg",
+      "output": "page_0044.docx",
+      "line_count": 40,
+      "average_confidence": 0.9924,
+      "status": "ok"
+    },
+    {
+      "page": 45,
+      "source": "book_pages\\6302841220027323860.jpg",
+      "output": "page_0045.docx",
+      "line_count": 23,
+      "average_confidence": 0.9959,
+      "status": "ok"
+    },
+    {
+      "page": 46,
+      "source": "book_pages\\6302841220027323861.jpg",
+      "output": "page_0046.docx",
+      "line_count": 25,
+      "average_confidence": 0.9957,
+      "status": "ok"
+    },
+    {
+      "page": 47,
+      "source": "book_pages\\6302841220027323862.jpg",
+      "output": "page_0047.docx",
+      "line_count": 33,
+      "average_confidence": 0.9954,
+      "status": "ok"
+    },
+    {
+      "page": 48,
+      "source": "book_pages\\6302841220027323863.jpg",
+      "output": "page_0048.docx",
+      "line_count": 34,
+      "average_confidence": 0.9944,
+      "status": "ok"
+    },
+    {
+      "page": 49,
+      "source": "book_pages\\6302841220027323864.jpg",
+      "output": "page_0049.docx",
+      "line_count": 26,
+      "average_confidence": 0.9935,
+      "status": "ok"
+    },
+    {
+      "page": 50,
+      "source": "book_pages\\6302841220027323865.jpg",
+      "output": "page_0050.docx",
+      "line_count": 60,
+      "average_confidence": 0.9894,
+      "status": "ok"
+    },
+    {
+      "page": 51,
+      "source": "book_pages\\6302841220027323866.jpg",
+      "output": "page_0051.docx",
+      "line_count": 21,
+      "average_confidence": 0.9957,
+      "status": "ok"
+    },
+    {
+      "page": 52,
+      "source": "book_pages\\6302841220027323867.jpg",
+      "output": "page_0052.docx",
+      "line_count": 35,
+      "average_confidence": 0.991,
+      "status": "ok"
+    },
+    {
+      "page": 53,
+      "source": "book_pages\\6302841220027323868.jpg",
+      "output": "page_0053.docx",
+      "line_count": 26,
+      "average_confidence": 0.9922,
+      "status": "ok"
+    },
+    {
+      "page": 54,
+      "source": "book_pages\\6302841220027323869.jpg",
+      "output": "page_0054.docx",
+      "line_count": 9,
+      "average_confidence": 0.9955,
+      "status": "ok"
+    },
+    {
+      "page": 55,
+      "source": "book_pages\\6302841220027323870.jpg",
+      "output": "page_0055.docx",
+      "line_count": 30,
+      "average_confidence": 0.9931,
+      "status": "ok"
+    },
+    {
+      "page": 56,
+      "source": "book_pages\\6302841220027323871.jpg",
+      "output": "page_0056.docx",
+      "line_count": 40,
+      "average_confidence": 0.9945,
+      "status": "ok"
+    },
+    {
+      "page": 57,
+      "source": "book_pages\\6302841220027323872.jpg",
+      "output": "page_0057.docx",
+      "line_count": 18,
+      "average_confidence": 0.9928,
+      "status": "ok"
+    },
+    {
+      "page": 58,
+      "source": "book_pages\\6302841220027323873.jpg",
+      "output": "page_0058.docx",
+      "line_count": 23,
+      "average_confidence": 0.9909,
+      "status": "ok"
+    },
+    {
+      "page": 59,
+      "source": "book_pages\\6302841220027323874.jpg",
+      "output": "page_0059.docx",
+      "line_count": 30,
+      "average_confidence": 0.9952,
+      "status": "ok"
+    },
+    {
+      "page": 60,
+      "source": "book_pages\\6302841220027323875.jpg",
+      "output": "page_0060.docx",
+      "line_count": 1,
+      "average_confidence": 0.7211,
+      "status": "ok"
+    }
+  ],
+  "failures": []
+}
